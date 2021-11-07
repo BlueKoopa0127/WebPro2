@@ -1,0 +1,58 @@
+body {
+    margin: 0px;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+.content {
+    display: flex;
+    background-color: #ccc;
+}
+
+.main {
+    margin: 0% 2% 0% 0%;
+    padding: 0% 3%;
+    padding-bottom: 10%;
+    background-color: #eee;
+}
+
+aside {
+    flex-shrink: 0;
+    width: 150px;
+}
+
+.stick {
+    top: 5%;
+    position: sticky;
+}
+
+h2.side_index {
+    text-align: center;
+}
+
+ol.index > li {
+    padding: 5px 0px;
+}
+
+.howto_body {
+    padding: 15px 25px;
+    border: 5px solid pink;
+    border-radius: 15px;
+}
+
+footer {
+    padding: 10px 0px;
+    text-align: center;
+    background-color: rosybrown;
+}

@@ -1,10 +1,94 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
-    <title>My test page</title>
+    <title>コンピュータに優しいWebページ</title>
+    <link rel="stylesheet" href= "styles/styles.css">
+    <link rel="icon" href="/images/favicon.ico" id="favicon">
+
+    <meta property="og:url" content=" ページの URL"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="コンピュータに優しいWebページ"/>
+    <meta property="og:image" content=" サムネイル画像の URL" />
+    <meta property="og:description" content="ページの説明文" />
   </head>
   <body>
-    <p>Oh </p>
+    <div class="content">
+      <aside>
+        <div class="stick">
+          <h2 class="side_index">目次</h2>
+          <ol class="index">
+            <li><a href="#start">はじめに</a></li>
+            <li><a href="#h123456">h1~h6要素</a></li>
+            <li><a href="#aside">aside要素</a></li>
+            <li><a href="#ul,ol">ul,ol要素</a></li>
+          </ol>
+        </div>
+      </aside>
+
+      <div class="main">
+        <h1>コンピュータに優しいWebページ</h1>
+
+        <h2 id="start">はじめに</h2>
+        <p>
+        コンピュータにとって優しいWebページとはセマンティクスが意識されて作られたWebページである。
+        HTMLにおけるセマンティクスとは「要素の役割と内容が一致しているか」である。
+        例えば「CSSで強引に見た目を変えてh2要素で本文を書いていたり、p要素でタイトルを書いている」というのはセマンティクスを意識していない。
+        コンピュータは「h2は見出し」だと思っているので「様々なページの見出しを調べるプログラム」を動かされた時に見出しではないものも調べてしまったりする。
+        つまりセマンティクスを意識していないのでコンピュータに優しくないWebページとなってしまったのである。
+        そこで自分は主にWebページ作成の初学者に向けて「この要素はこのような場合に使うとコンピュータに優しいWebページになる。」というのを3つ程書いていこうと思う。
+        </p>
+
+
+        <h2 id="h123456">h1~h6要素</h2>
+        <h3>説明</h3>
+        <ul class="howto_body">
+          <li>タイトルや見出し、小見出しを作りたい時に使う。</li>
+          <li>このページでは「コンピュータに優しいページ」がh1要素に、「目次」「はじめに」「h1~h6要素」などがh2要素に、「説明」「マークアップ例、動作結果」がh3要素によって作られている。
+          </li>
+        </ul>
+        <h3>マークアップ例、動作結果</h3>
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="dyzmmRo" data-user="bluekoopa0127" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/bluekoopa0127/pen/dyzmmRo">
+          h1,h2</a> by BlueKoopa (<a href="https://codepen.io/bluekoopa0127">@bluekoopa0127</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+        <h2 id="aside">aside要素</h2>
+        <h3>説明</h3>
+        <ul class="howto_body">
+          <li>サイドバーや補足、脚注を作りたい時に使う。</li>
+          <li>このページでは左側にある目次のサイドバーがaside要素によって作られている。</li>
+        </ul>
+        <h3>マークアップ例、動作結果</h3>
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="QWMmmgQ" data-user="bluekoopa0127" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/bluekoopa0127/pen/QWMmmgQ">
+          aside</a> by BlueKoopa (<a href="https://codepen.io/bluekoopa0127">@bluekoopa0127</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+        <h2 id="ul,ol">ul,ol要素</h2>
+        <h3>説明</h3>
+        <ul class="howto_body">
+          <li>リストを作りたい時に使う。</li>
+          <li>順序が関係ない時はul要素、順序が関係ある場合はol要素を使う。</li>
+          <li>このページでは目次のリストがol要素に、この説明部分がul要素によって作られている。</li>
+        </ul>
+        <h3>マークアップ例、動作結果</h3>
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="KKvooqR" data-user="bluekoopa0127" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/bluekoopa0127/pen/KKvooqR">
+          ul,ol</a> by BlueKoopa (<a href="https://codepen.io/bluekoopa0127">@bluekoopa0127</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+      </div>
+    </div>
+
+    <footer>
+      このWebページは日本大学文理学部情報科学科 Webプログラミングの演習課題です。<br>
+      学生証番号：5420071 氏名：塚田一晃
+    </footer>
   </body>
 </html>
