@@ -46,7 +46,8 @@ ol.index > li {
 }
 
 .howto_body {
-    padding: 15px 25px;
+    padding: 15px;
+    padding-left: 40px;
     border: 5px solid pink;
     border-radius: 15px;
 }
